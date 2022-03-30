@@ -1,0 +1,578 @@
+@import "../../styles/utilities";
+
+.apartments {
+  width: 100%;
+  height: 100%;
+  background-color: $mtp-white;
+
+  &__main {
+    width: 81.6rem;
+    margin: 0 auto;
+
+    .apartments__container {
+      display: flex;
+      align-items: center;
+
+      .bungalow {
+        margin-top: 5%;
+        background-image: url(../assets/images/img8.png);
+        width: 45.2rem;
+
+        height: 24rem;
+        position: relative;
+        margin-bottom: 3%;
+
+        &__overlay {
+          width: 100%;
+          height: 40px;
+          background: rgba(51, 51, 51, 0.45);
+          position: absolute;
+          bottom: 0;
+          border-bottom-left-radius: 20px;
+          border-bottom-right-radius: 20px;
+        }
+      }
+
+      .inside__view {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4%;
+        margin-left: 3%;
+
+        .grid1 {
+          background-image: url(../assets/images/room5.png);
+          width: 13.8rem;
+          height: 11.1rem;
+          border-radius: 5px;
+        }
+
+        .grid2 {
+          background-image: url(../assets/images/room6.png);
+          width: 13.8rem;
+          height: 11.1rem;
+          border-radius: 5px;
+        }
+
+        .grid3 {
+          background-image: url(../assets/images/room7.png);
+          width: 13.8rem;
+          height: 11.1rem;
+          border-radius: 5px;
+        }
+
+        .grid__overlay {
+          background-image: url(../assets/images/room8.png);
+          width: 13.8rem;
+          height: 11.1rem;
+          background: (rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+
+          .grid__overlaytxt {
+            width: 5rem;
+            height: 5rem;
+            margin: 12% auto;
+
+            p {
+              color: $mtp-light;
+              font-size: 4.5rem;
+              padding: 0;
+              font-family: "poppins";
+              font-weight: 400;
+            }
+          }
+        }
+      }
+    }
+
+    // second section
+    .info__main {
+      display: flex;
+
+      .apartments__info {
+        width: 44.5rem;
+        margin-top: 0.2%;
+
+        .houseinfo {
+          width: 44.5rem;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          .roominfo {
+            p {
+              font-family: "Source Serif Pro";
+              font-style: normal;
+              font-weight: 600;
+              font-size: 2.8rem;
+              color: $mtp-gray1;
+            }
+          }
+
+          .priceinfo {
+            .txt__opacity {
+              font-family: "Source Serif Pro";
+              font-weight: 600;
+              font-size: 1.2rem;
+              color: $mtp-gray2;
+            }
+          }
+        }
+
+        .locationinfo {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          .placeinfo {
+            display: flex;
+            align-items: center;
+
+            .location__icon {
+              width: 1.5rem;
+              height: 1.5rem;
+
+              img {
+                width: 100%;
+              }
+            }
+            .place {
+              margin-left: 1rem;
+              color: $mtp-gray3;
+              font-size: 1.2rem;
+              font-family: "Inter";
+              font-style: normal;
+              font-weight: 500;
+            }
+          }
+
+          .rating {
+            display: flex;
+            align-items: center;
+
+            .star__icon {
+              // width: 1.2rem;
+              // height: 1.2rem;
+              margin-right: 1rem;
+              margin-bottom: 0.3rem;
+              img {
+                width: 100%;
+              }
+            }
+          }
+        }
+
+        .feature {
+          margin-top: 3%;
+
+          .text {
+            font-family: "Inter" !important;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 1.8rem;
+            line-height: 2.1rem;
+            margin-top: 4%;
+            color: $mtp-navy;
+          }
+
+          .feature__list {
+            ul {
+              border-bottom: 1px solid $mtp-gray1;
+              border-top: 1px solid $mtp-gray3;
+              padding: 2% 1%;
+              display: flex;
+              align-items: center;
+              list-style: none;
+
+              .listgold {
+                color: $mtp-gold;
+              }
+
+              li {
+                margin-left: 2%;
+              }
+            }
+          }
+        }
+
+        .grid__icons {
+          margin-top: 4%;
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+
+          .icon1 {
+            margin-bottom: 12%;
+            margin-right: 1%;
+
+            img {
+              display: block;
+              margin: auto;
+              margin-bottom: 0.6rem;
+            }
+
+            p {
+              text-align: center;
+              color: $mtp-gray3;
+            }
+          }
+        }
+
+        .description {
+          .destxt {
+            margin-top: 6%;
+            font-family: "Inter" !important;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 1.8rem;
+            line-height: 2.12rem;
+            color: $mtp-navy;
+          }
+
+          p {
+            color: $mtp-gray1;
+          }
+        }
+
+        .customers {
+          margin-top: 4%;
+
+          h4 {
+            font-family: "Source Serif Pro";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 1.8rem;
+            line-height: 2.2rem;
+            color: $mtp-navy;
+          }
+
+          .customer__rating {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 4% 0;
+
+            .customer__1 {
+              display: flex;
+              align-items: center;
+
+              // .customer__img {
+              //   img {
+              //   }
+              // }
+
+              .customer__info {
+                margin-left: 1.3rem;
+                .profile__1a {
+                  font-family: "Inter" !important;
+                  font-style: normal;
+                  font-weight: 600;
+                  font-size: 1.1rem;
+                  line-height: 1.4rem;
+                  color: $mtp-gray1;
+                }
+
+                .customer__txt {
+                  margin-top: 4%;
+                  font-family: "poppins" !important;
+                  font-style: normal;
+                  font-weight: 500;
+                  font-size: 1.1rem;
+                  line-height: 1.4rem;
+                  color: $mtp-gray3;
+                }
+              }
+            }
+
+            .customers__rating {
+              margin-right: 2%;
+          
+              .listflex {
+                display: flex;
+                align-items: center;
+                margin-right: 16%;
+               
+                li {
+                  list-style: none;
+                  margin-right: 5%;
+                  
+                }
+              }
+
+              p {
+                font-weight: 600;
+                margin-left: 82%;
+              }
+            }
+          }
+
+          .customer__femi {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 6%;
+
+            .customer__2 {
+              display: flex;
+              align-items: center;
+
+              // .customer__img2 {
+              //   img {
+              //   }
+              // }
+              .customer__info2 {
+                margin-left: 1.3rem;
+
+                .profile__2 {
+                  font-family: "Inter";
+                  font-style: normal;
+                  font-weight: 600;
+                  font-size: 1.1rem;
+                  line-height: 1.4rem;
+                  color: $mtp-gray1;
+                }
+
+                p {
+                  margin-top: 0.5rem;
+                  font-family: "poppins" !important;
+                  font-style: normal;
+                  font-weight: 500;
+                  font-size: 1.1rem;
+                  line-height: 1.4rem;
+                  color: $mtp-gray3;
+                }
+              }
+            }
+
+            .customers__rate {
+             margin-right: 2%;
+              margin-bottom: 6%;
+
+              .listflex2 {
+                display: flex;
+                align-items: center;
+
+                li {
+                  list-style: none;
+                  margin-right: 6%;
+
+                  .small__star {
+                    width: 0.6rem;
+                    height: 0.65rem;
+                  }
+                }
+              }
+
+              p {
+                font-weight: 600;
+                margin-left: 90%;
+              }
+            }
+          }
+        }
+      }
+
+      // white background section
+
+      .date__container {
+        margin-left: 9%;
+        margin-top: 2%;
+        width: 26rem;
+        height: 41.5rem;
+        background-color: $mtp-light1;
+        padding: 3rem 2rem;
+
+        .dates {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 0 2rem;
+
+          .start__date {
+            p {
+              font-family: "Source Serif Pro" !important;
+              font-style: normal;
+              font-weight: 600;
+              font-size: 1.5rem;
+              line-height: 1.9rem;
+            }
+
+            .dateflex {
+              display: flex;
+              align-items: center;
+
+              .dateimg {
+                width: 3.8rem;
+                height: 2rem;
+                display: flex;
+                align-items: center;
+                margin: 0 auto;
+
+                .calendar {
+                  width: 2rem;
+                  height: 2rem;
+                }
+
+                .dropdown {
+                  width: 1.5rem;
+                  height: 1.5rem;
+                }
+              }
+            }
+          }
+
+          .end__date {
+            p {
+              font-family: "Inter";
+              font-style: normal;
+              font-weight: 400;
+              font-size: 1.5rem;
+            }
+
+            .dateflex {
+              display: flex;
+              align-items: center;
+
+              .dateimg {
+                margin: 0 auto;
+                display: flex;
+                align-items: center;
+                .calendar {
+                  width: 2rem;
+                  height: 2rem;
+                }
+
+                .dropdown {
+                  width: 1.5rem;
+                  height: 1.5rem;
+                }
+              }
+            }
+          }
+        }
+
+        .extraservices {
+          margin-top: 8%;
+
+          h5 {
+            font-family: "Source Serif Pro";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 1.6rem;
+            color: $mtp-navy;
+            line-height: 2.2rem;
+            text-align: center;
+            margin-bottom: 8%;
+          }
+
+          .extrservices1 {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8%;
+
+            .circle {
+              width: 1.3rem;
+              height: 1.3rem;
+              border-radius: 50%;
+              border: 1px solid $mtp-black;
+            }
+            .extra1 {
+              font-family: "Source Serif Pro";
+              font-style: normal;
+              font-weight: 600;
+              font-size: 1.3rem;
+              line-height: 1.9rem;
+              margin-left: 6%;
+            }
+
+            .extra45 {
+              font-family: "Source Serif Pro";
+              font-style: normal;
+              font-weight: 300;
+              font-size: 1.3rem;
+              line-height: 1.9rem;
+              margin-left: 38%;
+            }
+
+            .extra12 {
+              font-family: "Source Serif Pro";
+              font-style: normal;
+              font-weight: 300;
+              font-size: 1.3rem;
+              line-height: 1.9rem;
+              margin-left: 8%;
+            }
+
+            .extra5 {
+              font-family: "Source Serif Pro";
+              font-style: normal;
+              font-weight: 300;
+              font-size: 1.3rem;
+              line-height: 1.9rem;
+              margin-left: 13%;
+            }
+          }
+
+          .extrservices__tax {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            margin-left: 12%;
+
+            .tax {
+              font-size: 1.2rem;
+              font-weight: 600;
+              font-family: "Source Serif Pro";
+              font-style: normal;
+            }
+
+            .tax__amt {
+              font-family: "Source Serif Pro";
+              font-style: normal;
+              font-weight: 300;
+              font-size: 1.3rem;
+              line-height: 1.9rem;
+              margin-left: 47%;
+            }
+          }
+
+          .extrservices__total {
+            display: flex;
+            align-items: center;
+            // margin-bottom: 1.5rem;
+            margin-left: 10%;
+
+            .total {
+              font-family: "Source Serif Pro";
+              font-style: normal;
+              font-weight: 900;
+              font-size: 1.3rem;
+              line-height: 1.9rem;
+            }
+
+            .total__amt {
+              font-family: "Source Serif Pro";
+              font-style: normal;
+              font-weight: 600;
+              font-size: 1.3rem;
+              line-height: 1.9rem;
+              margin-left: 39%;
+            }
+          }
+
+          .btnn {
+            margin-top: 20%;
+            width: 60%;
+            margin: 20% auto;
+
+            button {
+              width: 100%;
+              color: $mtp-light1;
+              background-color: $mtp-gold;
+              border: none;
+              border-radius: 5px;
+              padding: 5% 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
