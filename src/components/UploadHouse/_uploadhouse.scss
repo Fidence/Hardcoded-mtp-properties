@@ -1,0 +1,290 @@
+@import "../../styles/utilities";
+
+.upload__main {
+  background-color: $mtp-white;
+  width: 100%;
+  height: 100%;
+
+  .mainwrapper {
+    width: 90%;
+    margin: 0 auto;
+    .upload__wrapper {
+      margin-bottom: 8%;
+      .arrow {
+        display: flex;
+        align-items: center;
+        img {
+          width: 1%;
+        }
+        span {
+          margin-left: 2%;
+          font-weight: 700;
+        }
+      }
+      .cirles {
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        p {
+          margin: 1rem 30% 0 0;
+        }
+        .cirle__one {
+          width: 20px;
+          height: 20px;
+          background-color: $mtp-gold;
+          border: 1px solid $mtp-black;
+          border-radius: 50%;
+        }
+        .cirle__two {
+          width: 20%;
+          border-bottom: 1px solid $mtp-black;
+        }
+        .cirle__three {
+          width: 16px;
+          height: 16px;
+          border: 1px solid $mtp-black;
+          border-radius: 50%;
+        }
+        .cirle__four {
+          width: 20%;
+          border-bottom: 1px solid $mtp-black;
+        }
+        .cirle__five {
+          width: 16px;
+          height: 16px;
+          border: 1px solid $mtp-black;
+          border-radius: 50%;
+          p {
+            align-items: center;
+          }
+        }
+      }
+    }
+
+    .houses {
+      // width: 90%;
+      margin: 5% auto;
+      h4 {
+        text-align: center;
+        font-weight: bolder;
+        margin-bottom: 4%;
+      }
+      .videos {
+        display: flex;
+        align-items: center;
+        width: 20%;
+        padding: 1% 2%;
+        border-radius: 5px;
+        border: 1px solid $mtp-gray4;
+        margin: 0 auto;
+        margin-bottom: 3%;
+
+        img {
+          width: 14%;
+        }
+
+        span {
+          margin-left: 4%;
+          font-size: 0.9rem;
+          color: $mtp-gray4;
+        }
+      }
+      .display {
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+
+        margin: 2% auto;
+
+        .grid1 {
+          background-image: url(../assets/images/room5.png);
+          width: 100%;
+          height: 11.1rem;
+          border-radius: 5px;
+          background-repeat: no-repeat;
+          img {
+            margin-left: 75%;
+            margin-top: 3%;
+          }
+        }
+
+        .grid2 {
+          background-image: url(../assets/images/room6.png);
+          width: 100%;
+          height: 11.1rem;
+          border-radius: 5px;
+          background-repeat: no-repeat;
+          img {
+            margin-left: 75%;
+            margin-top: 3%;
+          }
+        }
+
+        .grid3 {
+          background-image: url(../assets/images/room7.png);
+          width: 100%;
+          height: 11.1rem;
+          border-radius: 5px;
+          background-repeat: no-repeat;
+          img {
+            margin-left: 75%;
+            margin-top: 3%;
+          }
+        }
+
+        .grid__overlay {
+          background-image: url(../assets/images/room8.png);
+          width: 100%;
+          height: 11.1rem;
+          border-radius: 5px;
+          background-repeat: no-repeat;
+          img {
+            margin-left: 75%;
+            margin-top: 3%;
+          }
+        }
+      }
+    }
+
+    .details {
+      // width: 90%;
+      margin: 5% auto;
+
+      h4 {
+        text-align: center;
+        font-weight: 600;
+      }
+      .add__info {
+        width: 100%;
+        margin-bottom: 2%;
+        border-radius: 10px;
+        p {
+          font-weight: 600;
+        }
+        input {
+          border: none;
+          width: 100%;
+          padding: 1%;
+          font-size: 0.8rem;
+          background-color: $mtp-light-gold;
+          border-radius: 10px;
+          &:focus {
+            outline: none;
+          }
+          &::placeholder {
+            color: $mtp-gray4;
+          }
+        }
+      }
+      .add {
+        // width: 100%;
+        margin-bottom: 2%;
+        p {
+          font-weight: 600;
+        }
+
+        .flex2 {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          // width: 100%;
+          border-radius: 10px;
+          background-color: $mtp-light-gold;
+
+          padding: 1%;
+          input {
+            border: none;
+            width: 70%;
+            font-size: 0.9rem;
+            background-color: $mtp-light-gold;
+            &:focus {
+              outline: none;
+            }
+            &::placeholder {
+              color: $mtp-gray4;
+            }
+          }
+          img {
+            width: 1.8%;
+          }
+        }
+      }
+    }
+
+    .landlords {
+      // width: 90%;
+      margin: 0 auto;
+      h4 {
+        text-align: center;
+        font-weight: 600;
+      }
+      .add__info {
+        width: 100%;
+        margin-bottom: 2%;
+        p {
+          font-weight: 600;
+        }
+        input {
+          border: none;
+          width: 100%;
+          padding: 1%;
+          font-size: 0.8rem;
+          background-color: $mtp-gray3;
+          color: $mtp-white;
+          border-radius: 10px;
+          &:focus {
+            outline: none;
+          }
+          &::placeholder {
+            color: $mtp-gray4;
+          }
+        }
+      }
+
+      .add {
+        width: 100%;
+        margin-bottom: 2%;
+        p {
+          font-weight: 600;
+        }
+
+        .flex2 {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+          border-radius: 10px;
+          background-color: $mtp-light-gold;
+
+          padding: 1%;
+          input {
+            border: none;
+            width: 70%;
+            font-size: 0.9rem;
+            background-color: $mtp-light-gold;
+            &:focus {
+              outline: none;
+            }
+            &::placeholder {
+              color: $mtp-gray4;
+            }
+          }
+          img {
+            width: 1.8%;
+          }
+        }
+      }
+    }
+    button {
+      display: block;
+      margin: 0 auto;
+      padding: 0.5% 8%;
+      background-color: $mtp-gold;
+      color: $mtp-white;
+      border-radius: 5px;
+      border: none;
+      font-weight: 600;
+    }
+  }
+}
