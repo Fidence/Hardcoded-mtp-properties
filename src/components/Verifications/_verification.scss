@@ -1,0 +1,116 @@
+@import "../../styles/utilities";
+
+.verification {
+  background-color: $mtp-white;
+
+  &__main {
+    width: 90%;
+    margin: 0 auto;
+    .wrapper {
+      margin-bottom: 5%;
+      h4 {
+        text-align: center;
+        font-weight: 900;
+      }
+      h5 {
+        font-weight: 600;
+        margin-bottom: 2%;
+      }
+      form {
+        width: 30%;
+        .rights {
+          margin-bottom: 6%;
+          p {
+            font-weight: 600;
+          }
+          .ownership {
+            display: flex;
+            align-items: center;
+            background-color: $mtp-light-gold;
+            border-radius: 10px;
+            padding: 2% 0 2% 6%;
+            width: 100%;
+            img {
+              width: 5%;
+            }
+            input {
+              // padding: 1.5%;
+              font-size: 0.8rem;
+              color: $mtp-gray4;
+              width: 70%;
+              border: none;
+              background-color: $mtp-light-gold;
+              margin-left: 2%;
+              &::placeholder {
+                color: $mtp-gray4;
+                font-size: 0.8rem;
+              }
+              &:focus {
+                outline: none;
+              }
+            }
+          }
+        }
+
+        .check {
+          display: flex;
+          align-items: center;
+          input [type="checkbox"] {
+            appearance: none;
+            -webkit-appearance: none;
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border: 1px solid $mtp-gray4;
+            background-color: $mtp-white;
+          }
+          span {
+            margin-left: 3%;
+            color: $mtp-gray4;
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+    .wrapper__2 {
+      h5 {
+        font-weight: 900;
+        margin-bottom: 2%;
+      }
+      p {
+        margin-bottom: 2%;
+      }
+      form {
+        width: 30%;
+        .account {
+          input {
+            padding: 2% 0 2% 6%;
+            font-size: 0.8rem;
+            color: $mtp-gray4;
+            width: 100%;
+            border: none;
+            border-radius: 10px;
+            background-color: $mtp-light-gold;
+            &::placeholder {
+              color: $mtp-gray4;
+              font-size: 0.8rem;
+            }
+            &:focus {
+              outline: none;
+            }
+          }
+        }
+      }
+    }
+    button {
+      display: block;
+      margin: 0 auto;
+      padding: 0.5% 8%;
+      background-color: $mtp-gold;
+      color: $mtp-white;
+      border-radius: 5px;
+      border: none;
+      font-weight: 600;
+    }
+  }
+}
