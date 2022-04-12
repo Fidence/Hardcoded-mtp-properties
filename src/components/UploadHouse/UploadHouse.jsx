@@ -22,16 +22,12 @@ const UploadHouse = () => {
             <span>Back</span>
           </div>
           <div className="cirles">
-            <div className="cirle__one">
-              <p>upload house</p>
-            </div>
+            <div className="cirle__one">{/* <p>upload house</p> */}</div>
             <div className="cirle__two"></div>
-            <div className="cirle__three">
-              <p>Add Features</p>
-            </div>
+            <div className="cirle__three">{/* <p>Add Features</p> */}</div>
             <div className="cirle__four"></div>
             <div className="cirle__five">
-              <p>Account Verification</p>
+              {/* <p>Account Verification</p> */}
             </div>
           </div>
         </div>
